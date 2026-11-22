@@ -104,9 +104,9 @@ function resize() {
   renderer.setSize(w, h, false);
   camera.aspect = w / h;
   const wide = w >= 900;
-  camera.userData.dist = wide ? 41 : 58;
+  camera.userData.dist = wide ? 43 : 58;
   // slide the scene to the right on wide screens, down on phones, so text stays readable
-  camera.setViewOffset(w, h, wide ? -w * 0.17 : 0, wide ? -h * 0.04 : -h * 0.3, w, h);
+  camera.setViewOffset(w, h, wide ? -w * 0.19 : 0, wide ? -h * 0.04 : -h * 0.3, w, h);
   camera.updateProjectionMatrix();
   needs = true;
 }
